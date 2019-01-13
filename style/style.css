@@ -51,11 +51,16 @@ nav{
   height: 100vh;
   font-weight: 600;
 }
-.header p{
-  font-size: 60px;
+.main-title{
+  font-size: 45px;
+  font-weight: bold;
+}
+.main-title u{
+  color: #ffc107;
 }
 .header h3{
   color: #ffc107;
+  font-size: 18px !important;
 }
 .landing-page{
   height: 100vh;
@@ -151,6 +156,13 @@ nav{
 #navbarTogglerDemo03{
   float: right;
 }
+/* footer */
+.footer{
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+}
+/* footer */
 @media (max-width:480px){
 
   .nav-link span{
