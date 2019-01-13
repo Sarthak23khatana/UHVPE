@@ -6,7 +6,10 @@ body{
   margin:0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Thasadith', sans-serif !important;
+  font-family: 'Montserrat', sans-serif;
+}
+.container-fluid{
+  background-color: #fff;
 }
 /* side-nav */
 .vertical-nav-row{
@@ -27,6 +30,10 @@ nav{
   background: transparent;
   /* box-shadow: 0px 5px 8px -8px #000; */
 }
+.nav-link span{
+  color: #fff !important;
+  letter-spacing: 2px;
+}
 .navbar-nav li{
   margin-right: 50px;
 }
@@ -42,7 +49,6 @@ nav{
 .header{
   z-index: 50;
   height: 100vh;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
 .header p{
@@ -65,10 +71,78 @@ nav{
   color: #fff;
   letter-spacing: 5px;
 }
-.about-page{
-  height: 100vh;
-  background-color: #03a9f4;
+/* about-section */
+.border-4{
+  border-left: 4px solid #673ab7;
+  border-right: 4px solid #673ab7;
 }
+.slide-shadow{
+  box-shadow: 5px 7px 10px -4px #212121;
+}
+.about-page{
+  margin-top:5vh;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url("../img/aboutBg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+}
+.about-content{
+  width: 100vw;
+  /* background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 10px 20px -5px #212121; */
+}
+.faculty-video{
+  font-size: 50px;
+  text-align: center;
+  height: 60vh;
+}
+.video-header{
+  color: #000;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+}
+.video-header i{
+  font-size: 20px;
+  color: #ffc107;
+  text-align: center;
+}
+.slider-faculty{
+  margin-top: 5vh;
+}
+.slider-student{
+  margin-top: 20vh;
+}
+.students-video{
+  font-size: 50px;
+  text-align: center;
+  height: 60vh;
+}
+.about-title{
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 150px;
+  color: #673ab7;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.about-title u{
+  color: #000;
+}
+.text-details{
+  font-size: 20px;
+  /* font-weight: 550; */
+  word-spacing: 2px;
+  height: 40vh;
+  color: #000;
+  text-align: center;
+
+}
+/* about-section */
 .resource-page{
   height: 100vh;
   background-color: #ffc107;
@@ -78,6 +152,12 @@ nav{
   float: right;
 }
 @media (max-width:480px){
+
+  .nav-link span{
+    font-weight: none;
+    text-shadow: none;
+    letter-spacing: none;
+  }
   .vertical-nav{
     visibility: collapse;
   }
@@ -103,5 +183,21 @@ nav{
   .nav-options ul li a{
     text-align: center;
   }
+  /* about */
+  .slider-faculty{
+    margin-top: 5px;
+  }
+  .faculty-video{
+    font-size: 50px;
+    text-align: center;
+
+  }
+  .about-title{
+    font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-top: 20px;
+  }
+    /* about */
 
 }
