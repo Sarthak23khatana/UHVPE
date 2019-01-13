@@ -1,0 +1,29 @@
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 400 && scroll < 1000) {
+	    $(".fab").css("color" , "#000");
+	  }
+
+	  else{
+		  $(".fab").css("color" , "#fff");
+	  }
+  })
+});
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 100) {
+	    $("nav").css("background" , "rgba(103, 58, 183,.9)");
+      $("nav").css("box-shadow" , "2px 5px 5px -6px #000");
+      $("nav").css("transition" , ".3s");
+	  }
+
+	  else{
+		  $("nav").css("background-color" , "transparent");
+      $("nav").css("box-shadow" , "none");
+
+	  }
+  })
+})
